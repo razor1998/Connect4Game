@@ -1,4 +1,4 @@
-# Connect4Game
+# Connect4Game v1.0
 JavaFX Game
 
 
