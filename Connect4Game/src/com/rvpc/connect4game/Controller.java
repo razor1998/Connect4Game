@@ -246,14 +246,16 @@ public class Controller implements Initializable {
     }
 
     public void resetPanel(){
-        playerOneTextField.clear();
-        playerTwoTextField.clear();
-        PLAYER_ONE = "Enter Name";
-        PLAYER_TWO = "";
-        playerNameLabel.setText(PLAYER_ONE);
-        setNamesButton.setDisable(false);
-        for (Rectangle rectangle : rectangleList) {
-            rootGridPane.getChildren().remove(rectangle);
+        if(setNamesButton.isDisabled()) {
+            playerOneTextField.clear();
+            playerTwoTextField.clear();
+            PLAYER_ONE = "Enter Name";
+            PLAYER_TWO = "";
+            playerNameLabel.setText(PLAYER_ONE);
+            setNamesButton.setDisable(false);
+            for (Rectangle rectangle : rectangleList) {
+                rootGridPane.getChildren().remove(rectangle);
+            }
         }
     }
 
