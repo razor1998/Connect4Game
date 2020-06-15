@@ -9,6 +9,7 @@ Connect Four (also known as Four Up, Plot Four, Find Four, Four in a Row, Four i
 
 
 Some minor bugs fixed in this release.
+
 Preview : -
 
 ![alt](connect4game.png)
